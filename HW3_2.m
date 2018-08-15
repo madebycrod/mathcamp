@@ -2,7 +2,7 @@
 % 
 %
 
-clear all;
+clear;
 
 syms q
 
@@ -16,15 +16,15 @@ TC = 2*q^3 - 4*q^2 + 140*q + 845;
 % Profit Function
 
 profit = TR-TC;
+disp('profit = ')
 pretty(profit);
-disp(profit);
 crit_pts = solve(profit);
 
 disp(crit_pts);
 
 fplot(profit);
 
-fplot(@(x) profit, xinterval [0 100],'b');
+% fplot(@(x) profit, xinterval [0 100],'b');
 hold on
 grid on;
 plot(double(crit_pts), double(subs(profit,crit_pts)),'ro');
