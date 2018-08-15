@@ -70,7 +70,7 @@ syms x;  % declare choice variables
 
     
     % comment out to remove critical points
-    plot(double(crit_ptsb), double(subs(b,crit_ptsb)),'b'); % plot critical points
+    plot(double(crit_ptsb), double(subs(b,crit_ptsb)),'bo '); % plot critical points
     text(0,0, 'critical point (0,0)'); 
 
     % add more text lines if more critical points exist
