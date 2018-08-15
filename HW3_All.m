@@ -47,7 +47,11 @@ syms x;  % declare choice variables
     
     syms x;
     
+<<<<<<< HEAD
     b =  (-3*x^4 -20*x^3 +144*x^2 +17); % Set function
+=======
+    b =  -(3*x^4 -20*x^3 +144*x^2 +17); % Set function
+>>>>>>> master
 
     rootsb = solve(b); % find roots of function
 
@@ -71,9 +75,14 @@ syms x;  % declare choice variables
     
     % comment out to remove critical points
     plot(double(crit_ptsb), double(subs(b,crit_ptsb)),'bo '); % plot critical points
+<<<<<<< HEAD
     text(-8,0, 'critical point (-8,0)'); 
     text(0,0, 'critical point (0,0)'); 
     text(3,0, 'critical point (3,0)'); 
+=======
+    text(0,0, 'critical point (0,0)'); 
+
+>>>>>>> master
     % add more text lines if more critical points exist
 
     % standard lines for each image
@@ -83,4 +92,8 @@ syms x;  % declare choice variables
     saveas(gcf,'Figure 1b.png');
     title('Optimization Graph');
 
+<<<<<<< HEAD
  
+=======
+c = 4*x*exp(3*x);
+>>>>>>> master
