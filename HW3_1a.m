@@ -11,11 +11,12 @@ syms x;  % declare choice variables
 
     a1 = diff(a); % Take derivative of function
 
-
+    disp('first derivative');
     pretty(a1); % display derivative in readable form
 
     crit_ptsa = solve(a1); % solve for critical points
 
+    disp('critical points');
     disp(crit_ptsa);
 
 

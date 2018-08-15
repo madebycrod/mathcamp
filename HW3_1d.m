@@ -11,7 +11,11 @@
     f1 = diff(f); % Take derivative of function
     f2 = diff(f1);% Take second derivative
 
+    disp('function');
+    disp(f);
+    disp('first derivative');
     pretty(f1); % display derivative in readable form
+    disp('second derivative');
     pretty(f2); % display second derivative in readable form
     
     crit_pts = solve(f1); % solve for critical points
@@ -22,14 +26,14 @@
 
 
     % Plot line Template
-    fplot(f,[-10, 10], 'r'); % plot line
+    fplot(f,[-100, 100], 'r'); % plot line
     hold on;
 
 
     fplot(f1, 'g');
     % comment out to remove critical points
     plot(double(crit_pts), double(subs(f,crit_pts)),'bo'); % plot critical points
-    text(6,0, 'critical point (5,0)'); 
+    text(0,5, 'critical point (0,5)'); 
 
     % add more text lines if more critical points exist
 

@@ -16,7 +16,7 @@ pretty(AC1);
 
 roots = solve(AC1);
 
-disp('roots')
+disp('critical valye for Average cost minimum')
 pretty(roots);
 
 
@@ -40,3 +40,4 @@ f(roots);
 
 disp('The minimum average cost is:');
 disp(ans);
+ fplot(f);

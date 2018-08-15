@@ -21,21 +21,21 @@
 
 
     % Plot line Template
-    fplot(b,[-12, 12], 'b'); % plot line
+    fplot(b, 'b'); % plot line
     
     hold on
 
 
     fplot(b1); % plot derivative
     % comment out to remove critical points
-    plot(double(crit_ptsb), double(subs(b,crit_ptsb)),'bo'); % plot critical points
-    text(-8,0, 'critical point (-8,0)'); 
-    text(0,0, 'critical point (0,0)'); 
-    text(3,0, 'critical point (3,0)'); 
+    plot(double(crit_ptsb), double(subs(b,crit_ptsb)),'ro'); % plot critical points
+    text(17,0, 'critical point (17,0)'); 
+    text(530,3, 'critical point (530,3)'); 
+    text(-11247,-8, 'critical point (-11247,-8)'); 
     % add more text lines if more critical points exist
 
     % standard lines for each image
-    legend('show','Location','best'); % add legend to graph
+    % legend('show','Location','best'); % add legend to graph
 
     % customize for each graph
 

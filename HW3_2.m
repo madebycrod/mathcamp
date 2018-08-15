@@ -11,14 +11,16 @@ TR = 5900*q - 10*q^2;
 
 % Total Cost Function
 
-TC = 2*q^3 - 4*q^2 + 140*q + 845;
+TC = 2*q^3 - 4*q^2 + 14*q + 845;
 
 % Profit Function
 
 profit = TR-TC;
 disp('profit = ')
 pretty(profit);
-crit_pts = solve(profit);
+
+profit1 = diff(profit);
+crit_pts = solve(profit1);
 
 disp(crit_pts);
 
